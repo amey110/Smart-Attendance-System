@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Attendance System - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Attendance System</h1>
+    <nav>
+      <a href="index.html">Login</a>
+      <a href="checkin.html">Student Check-In</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="login-container">
+      <div class="login-card">
+        <h2>Admin Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="loginAdmin()">Login</button>
+        <p>or</p>
+        <a href="checkin.html" class="secondary-btn">Student Check-In</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> Smart Attendance System</footer>
+  <script src="script.js"></script>
+</body>
+</html>

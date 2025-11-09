@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management - Smart Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Student Management</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="students.html">Students</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Enrolled Students</h2>
+    <input type="text" id="searchBox" placeholder="Search student..." onkeyup="searchStudents()">
+
+    <div class="student-list" id="studentList">
+      <div class="student-item"><span>101</span> <span>Amey Jadhav</span></div>
+      <div class="student-item"><span>102</span> <span>Priya Sharma</span></div>
+      <div class="student-item"><span>103</span> <span>Ravi Kumar</span></div>
+      <div class="student-item"><span>104</span> <span>Neha Patil</span></div>
+      <div class="student-item"><span>105</span> <span>Vikram Singh</span></div>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> Smart Attendance System</footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Check-In - Smart Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Smart Attendance System</h1>
+    <nav>
+      <a href="index.html">Login</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="camera-box">
+      <h2>Face Recognition Check-In</h2>
+      <div class="camera-placeholder">
+        <p>Camera Feed (Simulated)</p>
+      </div>
+      <button onclick="startAttendance()">Start Attendance</button>
+      <p id="status">Ready for face scan...</p>
+    </div>
+  </main>
+
+  <footer>© <span id="year"></span> Smart Attendance System</footer>
+  <script src="script.js"></script>
+</body>
+</html>

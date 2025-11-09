@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - Smart Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="students.html">Students</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="stats-cards">
+      <div class="card">
+        <h3>Total Students</h3>
+        <p id="totalStudents">40</p>
+      </div>
+      <div class="card">
+        <h3>Present Today</h3>
+        <p id="presentCount">0</p>
+      </div>
+      <div class="card">
+        <h3>Absent Today</h3>
+        <p id="absentCount">40</p>
+      </div>
+    </section>
+
+    <h2>Attendance Log</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Name</th>
+          <th>Time In</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="attendanceLog">
+        <tr><td colspan="4">No records yet</td></tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>© <span id="year"></span> Smart Attendance System</footer>
+  <script src="script.js"></script>
+</body>
+</html>

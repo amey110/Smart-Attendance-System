@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports - Smart Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Attendance Reports</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="students.html">Students</a>
+      <a href="reports.html">Reports</a>
+      <a href="index.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="report-section">
+      <h2>Weekly Attendance Report</h2>
+      <p>This section displays an overview of student attendance performance.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Total Present</th>
+            <th>Total Absent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2025-11-05</td><td>35</td><td>5</td></tr>
+          <tr><td>2025-11-06</td><td>38</td><td>2</td></tr>
+          <tr><td>2025-11-07</td><td>36</td><td>4</td></tr>
+        </tbody>
+      </table>
+      <button class="export-btn" onclick="downloadReport()">Export Report</button>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Smart Attendance System</footer>
+  <script src="script.js"></script>
+</body>
+</html>
